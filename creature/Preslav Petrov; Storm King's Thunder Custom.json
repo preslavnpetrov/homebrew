@@ -1,0 +1,271 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "PreslavPetrovStormKingsThunderCustom",
+				"abbreviation": "CSKT",
+				"full": "Custom Storm King's Thunder Content",
+				"version": "",
+				"authors": [
+					"Preslav Petrov"
+				]
+			}
+		],
+		"dateAdded": 1656606221,
+		"dateLastModified": 1671368560
+	},
+	"monster": [
+		{
+			"name": "Voldelum Starfallen, Arcanus Magnus",
+			"source": "CSKT",
+			"size": [
+				"L"
+			],
+			"type": "celestial",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d12 + 100",
+				"average": 295
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 15,
+			"dex": 18,
+			"con": 16,
+			"int": 24,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"cha": "+7",
+				"int": "+11"
+			},
+			"skill": {
+				"persuasion": "+7",
+				"arcana": "+15",
+				"history": "+11",
+				"religion": "+15"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"necrotic",
+				"radiant"
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal",
+				"Celestial"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Arcanus Magnus's spellcasting ability is Intelligence(spell save {@dc 19}). It can innately cast the following spells as a bonus action, requiring no material components:"
+					],
+					"daily": {
+						"1e": [
+							"{@spell confusion}",
+							"{@spell crown of madness}",
+							"{@spell suggestion}"
+						]
+					},
+					"will": [
+						"{@spell detect evil and good}",
+						"{@spell detect magic}",
+						"{@spell fire bolt}",
+						"{@spell resistance}"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Arcanus Magnus's spellcasting ability is Inteligence(spell save {@dc 19}). It can cast the following spells using its spell slots."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell cause fear|XGE}",
+								"{@spell chromatic orb}",
+								"{@spell shield}",
+								"{@spell sleep}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell darkness} (Covers the full Athenium)",
+								"{@spell hold person}",
+								"{@spell mirror image}"
+							],
+							"slots": 4
+						},
+						"3": {
+							"spells": [
+								"{@spell blink}",
+								"{@spell counterspell}",
+								"{@spell fireball}"
+							],
+							"slots": 3
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The abhorrent overlord has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Voldelum makes two attacks with his Lifestealer."
+					]
+				},
+				{
+					"name": "Lifestealer",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage plus 14 ({@damage 4d6}) necrotic damage. Voldelum regains hit points equal to half the amount of necrotic damage dealt if the target is a creature."
+					]
+				},
+				{
+					"name": "Storm of Crows {@recharge}",
+					"entries": [
+						"Voldelum conjures a swarm of spectral crows and harpies in a 20-foot-radius sphere centered on a point the Arcanus can see within 120 feet of it. The sphere remains for 1 minute or until the overlord loses concentration (as if concentrating on a spell), and its area is lightly obscured and {@quickref difficult terrain||3}.",
+						"Any creature that moves into the area for the first time on a turn or starts its turn there must make a {@dc 19} Constitution saving throw. A creature takes 16 ({@damage 3d10}) slashing damage plus 16 ({@damage 3d10}) psychic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I",
+				"CE"
+			],
+			"damageTags": [
+				"N",
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://pres-foundryvtt.s3.eu-west-2.amazonaws.com/Icons/voldelum.Token.webp",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Abhorrent overlords are gaunt, bipedal creatures whose gray, leathery skin is in stark contrast to the gleaming jewelry made of Underworld gold that they adorn themselves with. Their appetite for pain and death is eclipsed only by their greed; these fiends delight in searching out treasure and slaughtering all who stand in their way."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://pres-foundryvtt.s3.eu-west-2.amazonaws.com/Icons/voldelum-starfallen.png"
+						}
+					}
+				]
+			},
+			"shortName": "Voldelum",
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"T"
+			],
+			"bonus": [
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"Use the Innate Spellcasting feature described above."
+					]
+				}
+			],
+			"isNamedCreature": true,
+			"legendary": [
+				{
+					"name": "Summon Shadowspawn",
+					"entries": [
+						"Use the spell {@spell summon shadowspawn|TCE} at 3rd Level"
+					]
+				},
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"Use a spell from the Innate Spellcasting feature"
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Cast a spell from the Spellcasting feature at the minimum spell level available for that spell. Expend spell slots as usual."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Legendary Resistance",
+					"entries": [
+						"When the creature fails a saving throw of any kind, it may choose to succeed instead. It can use this ability 3 times a day, after which it requires a Long Rest to regain the expended uses."
+					]
+				}
+			]
+		}
+	]
+}
